@@ -1,0 +1,100 @@
+# Encrypted vault file — never commit this
+passwords.enc
+*.enc
+
+# Exported files — these are unencrypted and sensitive
+export.txt
+export.csv
+backup_*.enc
+
+# ------------------------------------------
+# Python
+# ------------------------------------------
+
+# Bytecode cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyc
+*.pyo
+
+# Distribution and packaging
+dist/
+build/
+*.egg-info/
+*.egg
+.eggs/
+
+# ------------------------------------------
+# Virtual environments
+# ------------------------------------------
+venv/
+env/
+.venv/
+.env/
+ENV/
+
+# ------------------------------------------
+# Environment and secret files
+# ------------------------------------------
+.env
+.env.local
+.env.production
+*.secret
+secrets.txt
+
+# ------------------------------------------
+# Editor and IDE files
+# ------------------------------------------
+
+# VS Code
+.vscode/
+*.code-workspace
+
+# PyCharm
+.idea/
+*.iml
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb
+
+# Vim
+*.swp
+*.swo
+*~
+
+# ------------------------------------------
+# Operating system files
+# ------------------------------------------
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Linux
+.directory
+
+# ------------------------------------------
+# Logs and temporary files
+# ------------------------------------------
+*.log
+*.tmp
+*.temp
+logs/
+temp/
+
+# ------------------------------------------
+# Testing
+# ------------------------------------------
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
