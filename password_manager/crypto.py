@@ -1,11 +1,11 @@
-# crypto.py - Encryption aur Decryption ka poora kaam yahan hota hai
+# crypto.py - Encryption aur Decryption ka poora kaam yaha ho raha hai
 
 import base64
 from cryptography.fernet import Fernet, InvalidToken
 from cryptography.hazmat.primitives import hashes
 from cryptography.hazmat.primitives.kdf.pbkdf2 import PBKDF2HMAC
 
-# Fixed salt - same salt = same key for same master password
+# Fixed salt use kiya hai same key for same master password
 SALT = b'PM_SALT_2024_SECURE_FIXED_KEY_01'
 
 
