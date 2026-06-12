@@ -30,9 +30,9 @@ def encrypt_data(plaintext: str, master_password: str) -> bytes:
     Encrypt the plain text string with Fernet.
     Returns: encrypted bytes which will be saved in the file.
     """
-    key = derive_key(master_password)                      # Step 1: Key banao
-    fernet = Fernet(key)                                   # Step 2: Fernet object banao
-    encrypted = fernet.encrypt(plaintext.encode('utf-8'))  # Step 3: Encrypt karo
+    key = derive_key(master_password)                        # Step 1: Key banao
+    fernet = Fernet(key)                                       # Step 2: Fernet object banao
+    encrypted = fernet.encrypt(plaintext.encode('utf-8'))     # Step 3: Encrypt karo
     return encrypted
 
 
